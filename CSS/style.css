@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    border: 10px solid crimson;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+
+}
+.box{
+    height: 100%;
+    background-color: rgb(250, 128, 28);
+    border: 2px solid black;
+    padding-top: 40px;
+}
+#box1{
+    width: 30%;
+    float: left;
+}
+#box2{
+    width: 70%;
+    float: left;
+}
+.main{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(243, 104, 213);
+
+}
+.boxes{ 
+    width:50%;
+    background-color: antiquewhite;
+    height: 100%;
+    border: 2px solid black
+}
+#box3{
+    float: left;
+
+}
+#box4{
+    float: left;
+
+}
+.box5{
+    height: 30%;
+    background-color: blue;
+    margin: 5px;
+   padding-top: 45px;
+}
+.box6{
+    height: 65%;
+    background-color: rgb(180, 180, 236);
+    margin: 5px;
+}
+#box4 img{
+    height: 80%;
+    width: 80%;
+    margin-top: 40px;
+    
+}
+.sec{
+    height: 300px;
+    width:100%;
+    background-color: yellowgreen;
+}
+.box7{
+    height: 300px;
+    width: 50%;
+    background-color: plum;
+    float: left;
+}
+.box8{
+    height: 300px;
+    width: 50%;
+    background-color: pink;
+    float: right;
+}
+.box7 img{
+   width: 400px; 
+   height: 250px;
+   margin-top: 10px;
+}
+footer{
+height: 250px;
+width: 100%;
+background-color: blueviolet;
+padding: 45px;
+}
+.boxz{
+    height: 170px;
+    width: 33.3%;
+    background-color: rgb(79, 149, 253);
+    padding: 50px;
+    border: 2px solid black;
+    margin-top: 10px;
+    
+}
+#box9{
+    float: left;
+}
+#box10{
+    float: left;
+}
+#box11{
+    float: left;
+}
