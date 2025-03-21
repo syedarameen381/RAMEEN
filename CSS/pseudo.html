@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .link:first-child {
+            color: blue;
+        }
+        .link2:last-child{
+            color: blueviolet;
+        }
+        .link3:nth-child(2n){
+            color: brown;
+        }
+        /* .main {
+            display: flex; */
+        /* .navlink{
+            display: flex;
+        } */
+        .link4:nth-last-child(2){
+           color: aqua;
+        }
+        .link5:nth-of-type(2){
+            background-color: greenyellow;
+        }
+        .link5:nth-last-of-type(1){
+            background-color: palevioletred;
+        }
+        /* .link6:only-child{
+            background-color: brown;
+        } */
+    .link6:empty{ 
+        background-color: brown;
+    }
+    /* .link:not(navlink){
+        background-color: pink;
+    } */
+
+    :is(.para1, .para2) h1{
+        color: blue;
+        font-weight: bolder;
+    } 
+    h1:hover{
+        background-color: aqua;
+        color:black;
+        transition: all ease-in-out;
+
+    }   
+        
+
+    </style>
+</head>
+<body>
+    <div class="navlink">
+        <ul>
+            <li class="link">link1</li>
+            <li class="link">link2</li>
+            <li class="link">link3</li>
+            <li class="link">link4</li>
+            <li class="link">link5</li>
+            <li class="link">link6</li>
+            <li class="link">link7</li>
+            <li class="link">link8</li>
+        </ul>
+    
+        <ul>
+            <li class="link2">link1</li>
+            <li class="link2">link</li>
+            <li class="link2">link3</li>
+            <li class="link2">link</li>
+            <li class="link2">link5</li>
+            <li class="link2">link6</li>
+            <li class="link2">link7</li>
+            <li class="link2">link8</li>
+        </ul>
+    
+        <ul>
+            <li class="link3">link1</li>
+            <li class="link3">link2</li>
+            <li class="link3">link3</li>
+            <li class="link3">link4</li>
+            <li class="link3">link5</li>
+            <li class="link3">link6</li>
+            <li class="link3">link7</li>
+            <li class="link3">link8</li>
+        </ul>
+    
+        <ul>
+            <li class="link4">link1</li>
+            <li class="link4">link2</li>
+            <li class="link4">link3</li>
+            <li class="link4">link4</li>
+            <li class="link4">link5</li>
+            <li class="link4">link6</li>
+            <li class="link4">link7</li>
+            <li class="link4">link8</li>
+        </ul>
+    
+        <ul>
+            <li class="link6">onlychild</li>
+            <li class="link6"></li> 
+        </ul>
+       
+    </div>
+          
+    <li class="link5">no parent</li>
+    <li class="link5">no parent</li>
+    <li class="link5">no parent</li>
+    <li class="link6"></li> 
+
+    <div class="para1">
+        <h1>First para</h1>
+    </div>
+    <div class="para2">
+        <h1>Second para</h1>
+    </div>
+    
+        
+
+
+
+</body>
+</html>
