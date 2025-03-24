@@ -37,6 +37,12 @@ header{
   padding: 10px; 
   /* color:white;  */
 }
+.menu a:hover{
+    background-color: #44a3d5;
+    border: 2px none #44a3d5;
+    border-radius: 20px;
+    color: #ffffff;
+}
 .btn{
     width:20%;
     /* background-color: aqua; */
@@ -131,7 +137,7 @@ margin-left: 40%;
 height: 3px;
 background-color: gray;
 }
-p{
+.box p{
     color: black;
 }
 ul li{
@@ -159,34 +165,40 @@ button{
     outline: none;
 }
 .sec3{
-    height: 400px;
+    height: 450px;
     width: 100%;
-    background-color: #F5F6F8;
+    background-color:#F5F6F8;
     text-align: center;
-    justify-content: space-evenly;
-    padding: 10px;
+    justify-content: center;
+    padding: 5px;
     display: flex;
 }
-.sectext1 h3{
+.sectext1 h1{
     color: #37517e;
-    font-weight:bolder;
-    font-size: x-large;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font: 34px Jost,sans-serif;
+    padding: 10px;
+    text-align: left;
 }
 span{
     color: #37517e;
     font-weight: lighter;
 }
+strong{
+    color: #37517e; ;
+}
 .sectext1 p{
     color: #444444;
     padding: 10px;
+    text-align: left;
 }
 .numbers{
     color: #44a3d5;
 }
 .item{
-  border: 1px solid white;  
+  border: 1px solid white;
+  background-color: #ffffff;
+  padding: 10px; 
+  box-shadow:0px 5px 25px 0px rgba(0, 0, 0, 0.1);    
 }
 .item h3{
     color: #37517e;
@@ -194,24 +206,241 @@ span{
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.sectext2{
+/* .sectext2{
     background-color: #ffffff;
     padding: 20px;
-    /* border:1px solid black ; */
+    border:1px solid black ;
     box-shadow:0px 5px 25px 0px rgba(0, 0, 0, 0.1);   
-}
+} */
 .boximg{
     height: 300px;
     width: 50%;
-    padding: 10px  
+    padding: 10px;
+     
 }
 .boximg img{
-    width: 70%;
+    width: 75%;
     object-fit: cover;
 }
 svg{
     width: 10px;
 }
+.sec4{
+    min-height:350px;
+    width:100%;
+    background-color: #F5F6F8;
+    text-align: center;
+    justify-content: center;
+}
+.sec4 h1{
+    text-align: center;
+    justify-content: center;
+    color: #37517e;
+    padding: 30px;   
+}
+.sec4 p{
+    color: #444444;
+}
+.sec4_box{
+display: flex;
+flex-direction: row;
+text-align: left;
+justify-content: space-evenly;
+padding: 20px;
+}
+.box1 {
+    border: 1px solid white;
+    background-color: #ffffff;
+    padding: 20px; 
+    box-shadow:0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.box1 h4{
+    color: #37517e;
+    padding: 10px;
+}
+.box1 svg{
+    width:30%;
+}
+.box1 p{
+padding: 10px;
+}
+.sec5{
+    min-height:600px;
+    width: 100%;
+    background-color:#ffffff;
+    text-align: center;
+    justify-content: center;
+}
+.sec5 h1{
+    text-align: center;
+    justify-content: center;
+    color: #37517e;
+    padding: 30px;   
+}
+.sec5 p{
+    color: #444444;
+}
+.sec5_box{
+    
+    text-align: left;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+}
+.box2{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px; 
+    box-shadow:0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.box2 h2{
+    color: #37517e;
+    padding: 10px;
+}
+.box2 span{
+    background-color: #44a3d5;
+    color: #ffffff;
+    font-weight: bold;
+    font-size:x-large;
+    border-radius:30px ;
+    padding: 10px;
+    
+}
+/* .one{
+    background-image: url(https://bootstrapmade.com/content/demo/Arsha/assets/img/steps/steps-1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;  
+} */
+.box2 img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    overflow-clip-margin:content box;
+    overflow:clip;
+}
+.box2 li{
+    color: #444444;
+    padding: 5px;
+}
+.box2 p{
+padding: 5px;
+}
+.sec6{
+    min-height:250px;
+    width: 100%;
+    background-color:plum;
+    text-align: left;
+    justify-content:space-evenly;
+    display: flex;
+    padding: 50px;
+    background-image: url(https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto;
+    background-attachment:fixed;
+}
+.sec6_text{
+    padding: 45px;
+}
+.sec6_btn{
+    padding: 50px;
+}
+.sec6_btn button{
+height: 50%;
+color: #ffffff;
+border-radius: 20px;
+/* padding: 10px 30px; */
+background: none;
+border: 2px solid #ffffff ;
+outline: none;
+}
+.sec7{
+    min-height:auto;
+    width: 100%;
+    background-color:#ffffff;
+    text-align: center;
+    justify-content:center;
+}
+.sec7 h1{
+    text-align: center;
+    justify-content: center;
+    color: #37517e;
+    padding: 20px;      
+}
+.sec7 p{
+color: #444444;
+}
+.menu_b{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.menu_b a{
+    text-decoration: none;
+    padding: 10px;
+    color:black;
+    text-align: center; 
+    justify-content: center;
+}
+.menu_b a:hover{
+    background-color: #44a3d5;
+    border: 2px none #44a3d5;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.sec7_img{
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.pic1{
+    width:100%;
+    height:auto;
+    /* align-items:flex-end;
+    justify-content: left; */
+}
+.pic1 img{
+    width: 100%;
+    object-fit: cover;
+    /* flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; */
+}
+.pic2{
+    width:100%;
+    height: auto;
+    padding: 10px;
+}
+.pic2 img{
+    width: 100%;
+    object-fit: cover;
+}
+.pic3{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    /* justify-content: right;
+    align-items: end; */
+}
+.pic3 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
 
 
 
