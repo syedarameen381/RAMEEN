@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            /* margin: 100px; */
+            transform: translateY(-70px, 60px);
+            transition: transform 1s ease-out;
+            animation: tilt 2s linear infinite;
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+            /* margin:90px ; */
+            /* gap: 30px; */
+            transform: translateY(-70px, 60px);
+            transition: transform 1s ease-out;
+            animation: tilt 2s linear infinite;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: lightslategray;
+            /* margin:90px ; */
+            /* gap: 30px; */
+            transform: translateY(-70px, 60px);
+            transition: transform 1s ease-out;
+            animation: tilt 2s linear infinite;  
+        }
+        .box1:hover{
+            transform: rotate(40deg);
+        }
+        .box2:hover{
+            transform: rotate(40deg);
+        }
+        .box3:hover{
+            transform: rotate(40deg);
+        }
+        /* @keyframes tilt{
+            50%{
+                transform: translate(30px ,-80px);
+                animation: tilt 2s infinite;
+            }
+            100%{
+                transform: skew(30deg ,70deg);
+            }
+        } */
+        
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    
+</body>
+</html>

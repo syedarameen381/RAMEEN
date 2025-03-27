@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .main {
+            background-color: pink;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .heading {
+            color: black;
+            /* text-align: center; */
+        }
+
+        .heading h1 {
+            color: black;
+            font: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box1 {
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        @media (min-width:1301px) {
+            .main {
+                background-color: burlywood;
+            }
+
+            .heading {
+                /* align-items: center;
+                justify-content: center; */
+                text-align: center;
+            }
+
+            .box1 {
+                background-color: purple;
+            }
+
+            .text {
+                background-color: red;
+            }
+
+            p {
+                align-items: center;
+                color: white;
+            }
+
+
+        }
+
+        @media (min-width:1025px) and (max-width:1300px) {
+            .main {
+                background-color: plum;
+            }
+
+            .box1 {
+                background-color: brown;
+            }
+
+            .heading h1 {
+                color: white;
+            }
+        }
+
+        @media (min-width:769px) and (max-width:1024px) {
+            .main {
+                background-color: blue;
+            }
+
+            .box1 {
+                background-color: blanchedalmond;
+            }
+
+            .heading h1 {
+                color: white;
+            }
+
+            p {
+                text-align: center;
+                color: white;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="heading">
+            <h1>Title</h1>
+        </div>
+        <div class="box">
+            <div class="box1"></div><br>
+            <div class="box1"></div>
+        </div><br>
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo doloribus, omnis obcaecati voluptatum
+                mollitia et dolorem alias, velit debitis fugiat laudantium eos impedit accusantium, eius vero ipsam hic!
+                Voluptatum, nam! Vel adipisci nam iste cupiditate iusto est minima minus. Inventore, atque. Ab pariatur
+                quod voluptatem dignissimos corporis non voluptatibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
