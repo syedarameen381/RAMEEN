@@ -28,7 +28,7 @@
 
 <body>
 
-    <!-- s-start->left side
+    s-start->left side
     t->top
     e-end->right
     bottom->
@@ -57,22 +57,32 @@
     float-end-> float to right
     float-start-> float to left
     btn->for button
-    size name -> lg-large , md-medium , sm-small 
+    size name -> lg-large , md-medium , sm-small
     button size-> btn-lg, btn-md, btn-sm
     button color-> btn-color name
     button-outline-color name
     container-> have more padding than container fluid
-    container-fluid -> less padding than container fluid 
+    container-fluid -> less padding than container fluid
     class"row" -> to generate row, each row can have only 12 columns
     col-number -> give number to columns
-    col -> auto generate columns equally 
-    col-screensize-colnumber-> adjusts column size with the given number according to screen size 
+    col -> auto generate columns equally
+    col-screensize-colnumber-> adjusts column size with the given number according to screen size (Responsiveness)
     xs -> below 576
     sm range ->576 to 768
     md range -> 768 to 992
     lg range -> 992 to 1200
     xl range -> 1200 to 1400
-    xxl -> 1400 above and onwards  -->
+    xxl -> 1400 above and onwards
+    table->class"table"
+    table color-> table-colorname
+    table width-> w-25,50,75,100
+    table border-> table-bordered table-boderless table-boderless
+    table hover
+    table with strips-> table-stipped-column/row
+    table size-> table-sm,md,lg
+
+
+
 
 
 
@@ -162,8 +172,92 @@
             </div>
 
         </div>
-    </div>
+    </div><br>
 
+
+
+    <table
+        class="table w-75 table-dark table-bordered table-hover table-striped-columns table-lg text-center table-responsive">
+        <tr>
+            <th>head1</th>
+            <th>head2</th>
+            <th>head3</th>
+            <th>head4</th>
+            <th>head5</th>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+            <td>data5</td>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+            <td>data5</td>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+            <td>data5</td>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+            <td>data5</td>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+            <td>data5</td>
+        </tr>
+    </table><br>
+
+
+    <form action="" class="form w-50 bg-warning m-auto p-5">
+
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control form-control-lg is-invalid">
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label for="check1" class="form-check-label">agree</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="check2">
+            <label for="check2" class="form-check-label">agree</label>
+        </div><br>
+
+        <select name="" class="form-select" id="">
+            <option value="">select</option>
+            <option value="">PENGUIN</option>
+            <option value="" selected>zerva</option>
+        </select>
+        <br><br>
+
+        <div class="form-floating">
+            <label for="date">Data</label>
+            <input type="text" class="form-control form-control-sm">
+        </div>
+
+    </form>
 
 
 

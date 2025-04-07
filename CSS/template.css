@@ -6,9 +6,9 @@
     color: white;
 }
 
-/* .container{
+.container{
     position: relative;
-} */
+}
 header {
     height: 100px;
     display: flex;

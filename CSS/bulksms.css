@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    position: sticky;
+}
+
+.logo {
+    width: 25%;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px;
+    color: #6c849e;
+}
+
+.navbar a:hover {
+    color: #0275d8;
+}
+
+#login {
+    color: #ff7900;
+}
+
+#login:hover {
+    color: #0275d8;
+}
+
+.btn {
+    width: 20%;
+    padding-left: 60px;
+}
+
+.btn button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: #0275d8;
+}
+.main{
+    width: 100%;
+}
+.sec1 {
+    height: auto;
+    width: 100%;
+    background-color: #F5F6F8;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.sec1_text {
+    width: 50%;
+    height: auto;
+    padding: 50px;
+}
+
+.sec1_text h1 {
+    color: #445869;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.sec1_text h3 {
+    color: #445869;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.btn1 button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #0275d8;
+}
+
+.sec1_img {
+    width: 60%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.sec1_img img {
+    width: 90%;
+}
+
+.sec2 {
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.sec2 h1 {
+    text-align: center;
+    justify-content: center;
+    color: #ff7900;
+    padding: 20px;
+}
+
+.sec2_box {
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.sec2_box1 {
+    width: 40%;
+}
+
+.sec2_boxa {
+    height: auto;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.sec2_boxa:hover {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sec2_boxa h2 {
+    color: #0275d8;
+    font-weight: lighter;
+}
+
+.sec2_boxa p {
+    color: #6c849e;
+}
+
+.sec2_boxa button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #ff7900;
+}
+
+.sec2_boxa h2 img {
+    width: 100%;
+}
+
+.sec2_text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.sec2_text h3 {
+    color: #445869;
+    text-align: center;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+span {
+    color: #0275d8;
+    text-align: center;
+    font-weight: lighter;
+}
+.sec2_text button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #ff7900;   
+}
+.sec3{
+    height: auto;
+    width: 100%;
+    background-color: #0275d8;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.sec3 h2{
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+.sec3_box{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sec3_boxa{
+    height: 300px;
+    width: 25%;
+    background-color: #0275d8;
+    border: 1px solid #0275d8;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sec3_img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sec3_img img{
+    width: 60%;
+}
+.sec3_text p{
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+.sec5{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.sec5 h1{
+    color: #044da1;
+    font-size: x-large;
+    font-family: "Open Sans", sans-serif;  
+}
+.sec5 p{
+    color:#6c849e ;
+}
+.sec5_box {
+    width: 100%;
+}
+.badges img{
+    width: 50%;
+}
+#review iframe{
+    background-color: #e9eff7;
+    height: 392px;
+    position: relative;
+    width: 94%;
+    border: solid 1px #C8D5E2;
+    border-radius: 5px;
+}
+#btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7900;
+    padding: 10px 20px;
+}
+svg{
+    width: 15px;
+    color: #fff;
+}
+.case_study{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+.case img{
+    width: 100%;
+}
+.sec6{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-image: url(https://www.bulksms.com/images/call-to-action111.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    background-color: #044da1;
+}
+.sec6_text{
+    padding: 40px;
+}
+.sec6_text h1{
+    color: #fff;
+}
+.sec6_text h3{
+    color: #fff;
+}
+.sec6_btn{
+    padding: 10px;
+}
+.sec6_btn button{
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7900;
+    padding: 10px 20px;   
+}
