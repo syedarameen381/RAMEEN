@@ -32,12 +32,13 @@ console.log (c)
   }
 }
 //arithmatic operators
-var n = 45 + 5;//addition+
-n = 45 - 5;//subtraction-
+var n = 45 + 5;//addition +
+n = 45 - 5;//subtraction -
 n = 45*5;// multiplaction *
 n = 2**3;//exponentiation **
 n = 5/2; //division /
 n = 5%2;//remainder %
+
 let inc = 5;
 inc++
 let btx = inc//increment ++
@@ -102,7 +103,7 @@ let newarr3=arr3.splice(1,1,"stars","moon")
 console.log(arr3)
 console.log(newarr3)
 const elemnts = ["H","He","Ca","Na","K"];
-//const spliced =elemnts.tospliced[]
+//const spliced =elemnts.tospliced[] 
 
 
 

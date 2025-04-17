@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="heading">hello class</h1>
+<h1 class="tagn">hello world</h1>
+<h1 class="tagn">hello world</h1>
+<img id="picture" class="images">
+
+
+
+<script>
+//selectors
+//document.getElementById("heading").innerHTML="Hello World by JS Dom" BY ID
+//document.getElementsByTagName("h1")[0].style.background="green" BY TAGNAME
+//document.getElementsByClassName("tagn")[0].style.background="red" BY CLASS
+// document.querySelector("#heading").style.background="pink"
+// document.querySelectorAll(".tagn")[0].innerHTML="changed"
+
+//second way 
+// let h=document.getElementsByTagName("h1")[0]
+// h.style.backgroundColor="blue"
+
+//update method
+let head = document.getElementById("heading");
+head.innerHTML= "<p> update <b> method </b> <p>"
+//head.innerText= "<p> update <b> method </b> <p>"
+
+let image = document.getElementById("picture")
+image.setAttribute("src","./southafrica.jpg")
+// document.write(image.getAttribute("src"))
+image.removeAttribute("src")
+console.log(image.hasAttribute("id"))
+
+// let get = document.getElementsByClassName("tagn")[0];
+// document.write(get.getAttribute("class"))
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    
+<h1 class="heading">Hello World</h1>
+<h1 class="heading">Hello World</h1>
+<img>
+
+
+
+
+<script>
+
+let head = document.querySelectorAll(".heading")[0]
+head.innerHTML="<p>Lorem ipsum dolor sit amet.<p>"
+head.style.background="plum"
+
+let a = document.querySelectorAll(".heading")[1]
+a.innerText= "<p>Lorem ipsum dolor sit amet.<p>"
+
+let b = document.getElementsByTagName("img")[0]
+b.setAttribute("src","./southafrica.jpg")
+b.removeAttribute("src")
+console.log(b.hasAttribute("src"))
+
+console.log(head.getAttribute("class"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
