@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js assign</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: auto;
+            width: 100%;
+            background-color: #ffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main {
+            /* height: auto; */
+            width: 75%;
+            background-color: #ffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid black;
+            padding: 15px;
+
+        }
+
+        .header h1 {
+            text-align: center;
+            text-decoration: underline;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 5px;
+
+        }
+
+        .text {
+            background-image: url(./download\ \(1\).jpg);
+            background-repeat: repeat;
+            background-position: center;
+            background-size: contain;
+            background-attachment: fixed;
+            background-color: rgb(249, 249, 161);
+            height: auto;
+            max-width: 40%;
+            text-align: center;
+            padding: 10px;
+            border: 1.5px solid yellow;
+        }
+
+        .text:hover {
+            box-shadow: 0px 2px 20px 0px rgb(250, 209, 4);
+        }
+
+        .text p {
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        .boxes {
+            min-height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        .box {
+            min-height: 100px;
+            width: 20%;
+            background-image: url(./download.jpg);
+            background-repeat: repeat;
+            background-position: center;
+            background-size: contain;
+            background-attachment: inherit;
+            padding: 30px;
+            border: 1.75px solid teal;
+            text-align: center;
+        }
+
+        .box:hover {
+            box-shadow: 0px 2px 20px 0px teal;
+        }
+
+        .box h2 {
+            color: rgb(11, 11, 109);
+            padding: 30px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .sidebar {
+            height: auto;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .field input {
+            background-color: rgb(224, 210, 224);
+            border: none;
+            text-align: center;
+            padding: 5px;
+            color: purple;
+            font-weight: bold;
+        }
+        .field .btn {
+            background-color: rgb(249, 123, 165);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 7px;
+        }
+        .field .btn:hover{
+            box-shadow: 0px 2px 20px 0px rgb(215, 24, 88);   
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Sidebar</h1><br>
+            </div><br>
+            <div class="fields">
+                <div class="field">
+                    <input type="text" id="text1" placeholder="Bg-color (main)">   
+                    <button class="btn" id="btn1">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text2" placeholder="Text-align">
+                    <button class="btn" id="btn2">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text3" placeholder="Height (Text)">
+                    <button class="btn" id="btn3">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text4" placeholder="Width (Text)">
+                    <button class="btn" id="btn4">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text9" placeholder=" Text Color">
+                    <button class="btn" id="btn9">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text5" placeholder="Flex-column (box)">
+                    <button class="btn" id="btn5">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text6"  placeholder="Gap between boxes">
+                    <button class="btn" id="btn6">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text7" placeholder="Align-items (box)">
+                    <button class="btn" id="btn7">Click Here</button>
+                </div><br><br>
+                <div class="field">
+                    <input type="text" id="text8" placeholder="Justify-content (box)">
+                    <button class="btn" id="btn8">Click Here</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1>Heading</h1><br>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum nobis sapiente officiis quas
+                    nemo minus praesentium nulla vel, delectus optio atque laudantium iure temporibus, animi error.
+                    Ullam, inventore eius! Nam fugiat consequuntur temporibus numquam. Commodi ab facilis voluptas
+                    dolores cum laborum eaque sint! Nemo sapiente dolor corrupti unde repudiandae enim, dicta iure
+                    beatae animi, ea cum reprehenderit consequatur maiores, sit error et inventore ratione! Quo ut quas
+                    culpa voluptas mollitia, consectetur officia, nulla cum, est tempora dolorem necessitatibus
+                    explicabo reiciendis. Non laborum at quasi soluta facere harum explicabo, nemo ipsum iusto?
+                    Necessitatibus corrupti iure laudantium et? Rerum, ullam voluptatibus.</p>
+            </div><br>
+            <div class="boxes">
+                <div class="box">
+                    <h2>BOX 1</h2>
+                </div>
+                <div class="box">
+                    <h2>BOX 2</h2>
+                </div>
+                <div class="box">
+                    <h2>BOX 3</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assign1.js"></script>
+
+</body>
+
+</html>

@@ -7,10 +7,13 @@
 </head>
 <body>
     
-<h1 id="heading">hello class</h1>
+<!-- <h1 id="heading">hello class</h1>
 <h1 class="tagn">hello world</h1>
 <h1 class="tagn">hello world</h1>
-<img id="picture" class="images">
+<img id="picture" class="images"> -->
+
+<button id="btn">click here</button>
+<input type="text" id="textf" value="">
 
 
 
@@ -27,18 +30,59 @@
 // h.style.backgroundColor="blue"
 
 //update method
-let head = document.getElementById("heading");
-head.innerHTML= "<p> update <b> method </b> <p>"
+// let head = document.getElementById("heading");
+// head.innerHTML= "<p> update <b> method </b> <p>"
 //head.innerText= "<p> update <b> method </b> <p>"
 
-let image = document.getElementById("picture")
-image.setAttribute("src","./southafrica.jpg")
-// document.write(image.getAttribute("src"))
-image.removeAttribute("src")
-console.log(image.hasAttribute("id"))
+// let image = document.getElementById("picture")
+// image.setAttribute("src","./southafrica.jpg")
+// // document.write(image.getAttribute("src"))
+// image.removeAttribute("src")
+// console.log(image.hasAttribute("id"))
 
 // let get = document.getElementsByClassName("tagn")[0];
 // document.write(get.getAttribute("class"))
+//head.classList.add("class-add")
+//head.classList.remove("class-add")
+// head.classList.add("class-add")
+
+// const tag1 = document.createElement("h1");
+// tag1.innerHTML = "hello world";
+// document.body.appendChild(tag1)
+
+//insert before
+
+// const tag2 = document.createElement("h1");
+// tag2.innerHTML = "hello fam";
+// heading.parentNode.insertBefore(tag2,heading);
+
+//EVENTS
+
+let btn = document.getElementById("btn");
+// btn.addEventListener("dblclick",function(){
+//  alert("button clicked")
+// })
+btn.style.backgroundColor= "pink";
+btn.style.border= "none";
+btn.style.color= "white";
+btn.style.padding= "10px";
+btn.style.borderRadius= "20px";
+
+let textf = document.getElementById("textf")
+btn.addEventListener("click",function(){
+    let text = textf.value;
+    document.write(text);
+})
+
+
+
+///"click","dblclick","mouseout","mouseover","mousemove","contextmenu"
+
+
+
+
+
+
 
 
 
@@ -59,4 +103,4 @@ console.log(image.hasAttribute("id"))
 
 
 </body>
-</html>
+</html>  
