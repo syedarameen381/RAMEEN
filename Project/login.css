@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #ffff;
+    padding: 5px;
+    display: flex;
+}
+
+.left {
+    min-height: 80%;
+    width: 100%;
+    padding: 10px;
+    border: 0.75px solid #cccccc;
+}
+
+.navbar {
+    height: auto;
+    padding: 30px;
+    text-align: left;
+}
+
+.middle_text h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#s1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(253, 81, 13);
+}
+
+#s2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(253, 13, 129);
+}
+
+#s3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(218, 14, 194);
+}
+
+.images_login {
+    text-align: center;
+}
+
+.right {
+    min-height: 80%;
+    width: 100%;
+    padding: 40px;
+    border: 0.75px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.credentials {
+    border: 0.75px solid #cccccc;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.credentials input {
+    width: 265px;
+    padding: 9px;
+}
+
+.credentials #btn1 {
+    width: 265px;
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(81, 182, 245, 0.886);
+    color: #ffff;
+    font-weight: bold;
+}
+
+.credentials #btn2 {
+    width: 265px;
+    padding: 9px;
+    border: none;
+    color: rgb(52, 51, 51);
+    background-color: #ffff;
+}
+.credentials .fb_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credentials a {
+    color: #3579EA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: small;
+    text-decoration: none;
+}
+.credentials p{
+    color: #7b7a7a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.signup{
+    width: 348px;
+    border: 0.75px solid #cccccc;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+}
+.signup #btn3{
+    padding: 3px;
+    color: #44a3d5;
+    border: none;
+    background-color: #ffff;
+    font-weight: 550;
+    font-size: 13px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.textbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.textbar a{
+    text-decoration: none;
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #737373;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.radio {
+    color: #737373;
+    background-color: #ffff;
+    border: none;
+}
+.Dropdown {
+    color: black;
+    background-color: white;
+
+}
+.bottom p{
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #737373; 
+}
+@media (min-width:300px) and (max-width:950px) {
+   .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   } 
+}
