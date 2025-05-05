@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a Post - Instagram Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .create-post-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .image-preview {
+            width: 100%;
+            height: 250px;
+            border: 2px dashed #ccc;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            resize: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a76c6;
+        }
+
+        .post-output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="create-post-container">
+        <h2>Create a Post</h2>
+
+        <div class="image-preview" id="imagePreview">
+            <span>No image chosen</span>
+        </div>
+
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
+        <button id="selectImageButton">Choose Image</button>
+
+        <textarea id="captionInput" placeholder="Write a caption..."></textarea>
+
+        <button id="postButton">Post</button>
+
+        <div class="post-output" id="postOutput"></div>
+    </div>
+
+    <script>
+//         const imageInput = document.getElementById('imageInput');
+//         const imagePreview = document.getElementById('imagePreview');
+//         const captionInput = document.getElementById('captionInput');
+//         const postButton = document.getElementById('postButton');
+//         const postOutput = document.getElementById('postOutput');
+
+//         imageInput.addEventListener('change', function () {
+//             const file = this.files[0];
+//             if (file) {
+//                 const reader = new FileReader();
+
+//                 imagePreview.innerHTML = ""; // clear
+//                 reader.onload = function (e) {
+//                     const img = document.createElement('img');
+//                     img.src = e.target.result;
+//                     imagePreview.appendChild(img);
+//                 };
+
+//                 reader.readAsDataURL(file);
+//             } else {
+//                 imagePreview.innerHTML = "<span>No image chosen</span>";
+//             }
+//         });
+
+//         postButton.addEventListener('click', () => {
+//             const caption = captionInput.value;
+//             const imgElement = imagePreview.querySelector('img');
+
+//             if (!imgElement) {
+//                 alert("Please choose an image.");
+//                 return;
+//             }
+
+//             const postDiv = document.createElement('div');
+//             postDiv.innerHTML = `
+//     <div class="posted">
+//       <img src="${imgElement.src}" style="width:100%; border-radius:8px;">
+//       <p>${caption}</p>
+//     </div>
+//   `;
+//             postOutput.innerHTML = postDiv.outerHTML;
+
+//             // Reset
+//             imageInput.value = "";
+//             captionInput.value = "";
+//             imagePreview.innerHTML = "<span>No image chosen</span>";
+//         });
+
+
+
+
+
+//const imageInput = document.getElementById('imageInput');
+  //const imagePreview = document.getElementById('imagePreview');
+  //const captionInput = document.getElementById('captionInput');
+  //const postButton = document.getElementById('postButton');
+  //const postOutput = document.getElementById('postOutput');
+
+  // Show image preview
+  // imageInput.addEventListener('change', () => {
+  //   const file = imageInput.files[0];
+  //   if (!file) {
+  //     imagePreview.innerHTML = "<span>No image chosen</span>";
+  //     return;
+  //   }
+
+  //   const reader = new FileReader();
+  //   reader.onload = () => {
+  //     imagePreview.innerHTML = `<img src="${reader.result}" style="max-width: 100%; border-radius: 8px;">`;
+  //   };
+  //   reader.readAsDataURL(file);
+  // });
+
+  // Post the image and caption
+  // postButton.addEventListener('click', () => {
+  //   const caption = captionInput.value;
+  //   const img = imagePreview.querySelector('img');
+
+  //   if (!img) {
+  //     alert("Please choose an image.");
+  //     return;
+  //   }
+
+  //   postOutput.innerHTML = `
+  //     <div class="posted">
+  //       <img src="${img.src}" style="width:100%; border-radius:8px;">
+  //       <p>${caption}</p>
+  //     </div>
+  //   `;
+
+    // Reset everything
+  //   imageInput.value = "";
+  //   captionInput.value = "";
+  //   imagePreview.innerHTML = "<span>No image chosen</span>";
+  // });
+
+
+
+
+
+// Elements
+const imageInput = document.getElementById('imageInput');
+const selectImageButton = document.getElementById('selectImageButton');
+const imagePreview = document.getElementById('imagePreview');
+const captionInput = document.getElementById('captionInput');
+const postButton = document.getElementById('postButton');
+const postOutput = document.getElementById('postOutput');
+
+// Open file dialog when custom button is clicked
+selectImageButton.addEventListener('click', () => {
+    imageInput.click();
+});
+
+// Preview selected image
+imageInput.addEventListener('change', () => {
+    const file = imageInput.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            imagePreview.innerHTML = `<img src="${e.target.result}" alt="Image Preview" style="max-width: 100%; height: auto;">`;
+        };
+        reader.readAsDataURL(file);
+    } else {
+        imagePreview.innerHTML = '<span>No image chosen</span>';
+    }
+});
+
+// Handle Post button click
+postButton.addEventListener('click', () => {
+    const caption = captionInput.value.trim();
+    const file = imageInput.files[0];
+
+    if (!file && !caption) {
+        alert('Please select an image or write a caption.');
+        return;
+    }
+
+    let outputHTML = '';
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            outputHTML += `<img src="${e.target.result}" alt="Posted Image" style="max-width: 100%; height: auto;"><br>`;
+            if (caption) {
+                outputHTML += `<p>${caption}</p>`;
+            }
+            postOutput.innerHTML = outputHTML;
+        };
+        reader.readAsDataURL(file);
+    } else {
+        outputHTML = `<p>${caption}</p>`;
+        postOutput.innerHTML = outputHTML;
+    }
+
+    // Reset form
+    imageInput.value = '';
+    captionInput.value = '';
+    imagePreview.innerHTML = '<span>No image chosen</span>';
+});
+
+
+
+
+
+    </script>
+</body>
+
+</html>
